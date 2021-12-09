@@ -13,7 +13,7 @@ I'm in charge of converting this application to React, with the addition of a jQ
 **Useful links:**
 
 - [Live demo 🌍](https://benjaminlesne.github.io/BenjaminLesne_14_07122021)
-- [Repository 📖](https://github.com/BenjaminLesne/BenjaminLesne_14_07122021)
+- [React application Repository 📖](https://github.com/BenjaminLesne/BenjaminLesne_14_07122021)
 - [Original application Repository 📖](https://github.com/BenjaminLesne/P12_Front-end)
 
 ## Installation
