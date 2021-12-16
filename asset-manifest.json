@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/BenjaminLesne_14_07122021/static/css/main.adc025c0.chunk.css",
-    "main.js": "/BenjaminLesne_14_07122021/static/js/main.c324f890.chunk.js",
-    "main.js.map": "/BenjaminLesne_14_07122021/static/js/main.c324f890.chunk.js.map",
-    "runtime-main.js": "/BenjaminLesne_14_07122021/static/js/runtime-main.f7b89a67.js",
-    "runtime-main.js.map": "/BenjaminLesne_14_07122021/static/js/runtime-main.f7b89a67.js.map",
-    "static/js/2.8a0663fb.chunk.js": "/BenjaminLesne_14_07122021/static/js/2.8a0663fb.chunk.js",
-    "static/js/2.8a0663fb.chunk.js.map": "/BenjaminLesne_14_07122021/static/js/2.8a0663fb.chunk.js.map",
-    "static/js/3.c7e8095b.chunk.js": "/BenjaminLesne_14_07122021/static/js/3.c7e8095b.chunk.js",
-    "static/js/3.c7e8095b.chunk.js.map": "/BenjaminLesne_14_07122021/static/js/3.c7e8095b.chunk.js.map",
+    "main.css": "/BenjaminLesne_14_07122021/static/css/main.151fe7f6.chunk.css",
+    "main.js": "/BenjaminLesne_14_07122021/static/js/main.1c73c6af.chunk.js",
+    "main.js.map": "/BenjaminLesne_14_07122021/static/js/main.1c73c6af.chunk.js.map",
+    "runtime-main.js": "/BenjaminLesne_14_07122021/static/js/runtime-main.f0398d79.js",
+    "runtime-main.js.map": "/BenjaminLesne_14_07122021/static/js/runtime-main.f0398d79.js.map",
+    "static/css/2.d109004f.chunk.css": "/BenjaminLesne_14_07122021/static/css/2.d109004f.chunk.css",
+    "static/js/2.fdffb628.chunk.js": "/BenjaminLesne_14_07122021/static/js/2.fdffb628.chunk.js",
+    "static/js/2.fdffb628.chunk.js.map": "/BenjaminLesne_14_07122021/static/js/2.fdffb628.chunk.js.map",
+    "static/js/3.52db69f1.chunk.js": "/BenjaminLesne_14_07122021/static/js/3.52db69f1.chunk.js",
+    "static/js/3.52db69f1.chunk.js.map": "/BenjaminLesne_14_07122021/static/js/3.52db69f1.chunk.js.map",
     "index.html": "/BenjaminLesne_14_07122021/index.html",
-    "static/css/main.adc025c0.chunk.css.map": "/BenjaminLesne_14_07122021/static/css/main.adc025c0.chunk.css.map",
-    "static/js/2.8a0663fb.chunk.js.LICENSE.txt": "/BenjaminLesne_14_07122021/static/js/2.8a0663fb.chunk.js.LICENSE.txt"
+    "static/css/2.d109004f.chunk.css.map": "/BenjaminLesne_14_07122021/static/css/2.d109004f.chunk.css.map",
+    "static/css/main.151fe7f6.chunk.css.map": "/BenjaminLesne_14_07122021/static/css/main.151fe7f6.chunk.css.map",
+    "static/js/2.fdffb628.chunk.js.LICENSE.txt": "/BenjaminLesne_14_07122021/static/js/2.fdffb628.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f7b89a67.js",
-    "static/js/2.8a0663fb.chunk.js",
-    "static/css/main.adc025c0.chunk.css",
-    "static/js/main.c324f890.chunk.js"
+    "static/js/runtime-main.f0398d79.js",
+    "static/css/2.d109004f.chunk.css",
+    "static/js/2.fdffb628.chunk.js",
+    "static/css/main.151fe7f6.chunk.css",
+    "static/js/main.1c73c6af.chunk.js"
   ]
 }
