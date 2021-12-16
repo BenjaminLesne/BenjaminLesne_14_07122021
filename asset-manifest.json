@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/BenjaminLesne_14_07122021/static/css/main.151fe7f6.chunk.css",
-    "main.js": "/BenjaminLesne_14_07122021/static/js/main.1c73c6af.chunk.js",
-    "main.js.map": "/BenjaminLesne_14_07122021/static/js/main.1c73c6af.chunk.js.map",
+    "main.js": "/BenjaminLesne_14_07122021/static/js/main.e944ea0e.chunk.js",
+    "main.js.map": "/BenjaminLesne_14_07122021/static/js/main.e944ea0e.chunk.js.map",
     "runtime-main.js": "/BenjaminLesne_14_07122021/static/js/runtime-main.f0398d79.js",
     "runtime-main.js.map": "/BenjaminLesne_14_07122021/static/js/runtime-main.f0398d79.js.map",
     "static/css/2.d109004f.chunk.css": "/BenjaminLesne_14_07122021/static/css/2.d109004f.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.d109004f.chunk.css",
     "static/js/2.fdffb628.chunk.js",
     "static/css/main.151fe7f6.chunk.css",
-    "static/js/main.1c73c6af.chunk.js"
+    "static/js/main.e944ea0e.chunk.js"
   ]
 }
