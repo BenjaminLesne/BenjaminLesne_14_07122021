@@ -2,17 +2,15 @@ import * as employeesActions from "./employees.slices";
 import employeeReducer from "./employees.slices";
 
 const employeeTest = {
-  firstName: "firstNameTest",
-  lastName: "lastNameTest",
-  dateOfBirth: "dateOfBirthTest",
-  startDate: "startDateTest",
-  address: {
-    street: "streetTest",
-    city: "cityTest",
-    state: "stateTest",
-    zip: "zipTest",
-    department: "departmentTest",
-  },
+  firstName: "Benjamin",
+  lastName: "Lesne",
+  dateOfBirth: "07-08-1990",
+  startDate: "08-08-1990",
+  street: "antoine de jussieu",
+  city: "Saint nazaire",
+  state: "France",
+  zipCode: 2,
+  department: "Sale",
 };
 
 const employeesStateTest = [employeeTest, employeeTest, employeeTest];

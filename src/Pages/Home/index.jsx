@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 
-import Header from "../Components/Header";
-import CreateEmployeeForm from "../Components/CreateEmployeeForm";
+import Header from "../../Components/Header";
+import CreateEmployeeForm from "../../Components/CreateEmployeeForm";
+
+/**
+ * Home page calling components like Header and CreateEmployeeForm
+ * @module Home
+ */
 
 const Home = () => {
   return (

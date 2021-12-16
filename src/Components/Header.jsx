@@ -1,5 +1,11 @@
 import "../styles/Header.css";
 
+/**
+ * A simple header with a title inside
+ * @module Header
+ *
+ */
+
 const Header = () => {
   return (
     <header className="title">

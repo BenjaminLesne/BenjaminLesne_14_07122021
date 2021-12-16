@@ -18,3 +18,8 @@ code {
   align-items: center;
   justify-content: center;
 }
+
+input:invalid {
+  background-color: #ffdddd;
+  border-color: #c00000;
+}

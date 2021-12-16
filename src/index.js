@@ -1,14 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Provider } from "react-redux";
+import React from "react";
+import ReactDOM from "react-dom";
 
-import EmployeeList from "./Pages/EmployeeList";
-import Home from "./Pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import { Provider } from "react-redux";
 import store from "./utils/store";
+
+import EmployeeList from "./Pages/EmployeesList";
+import Home from "./Pages/Home";
 
 ReactDOM.render(
   <React.StrictMode>
