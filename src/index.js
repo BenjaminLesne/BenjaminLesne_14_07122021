@@ -17,8 +17,11 @@ ReactDOM.render(
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route index element={<Home />} />
-          <Route path="/employee-list" element={<EmployeeList />} />
+          <Route path="/BenjaminLesne_14_07122021" element={<Home />} />
+          <Route
+            path="/BenjaminLesne_14_07122021/employee-list"
+            element={<EmployeeList />}
+          />
         </Routes>
       </BrowserRouter>
     </Provider>
