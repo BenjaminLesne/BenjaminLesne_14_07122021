@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: Pages/Home/index.jsx</title>
+    <title>JSDoc: Source: Components/HeaderHome.jsx</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: Pages/Home/index.jsx</h1>
+    <h1 class="page-title">Source: Components/HeaderHome.jsx</h1>
 
     
 
@@ -26,28 +26,31 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import "../../styles/Home.css";
+            <pre class="prettyprint source linenums"><code>import "../styles/HeaderHome.css";
 
-import Header from "../../Components/HeaderHome";
-import CreateEmployeeForm from "../../Components/CreateEmployeeForm";
+import LinkWithAnimation from "./LinkWithAnimation";
 
 /**
- * Home page calling components like Header and CreateEmployeeForm
- * @module Home
+ * A simple header with a title inside
+ * @module Header
+ *
  */
 
-const Home = () => {
+const Header = () => {
+  // View Current Employees
   return (
-    &lt;div className="Home">
-      &lt;Header />
-      &lt;main className="container Home__main">
-        &lt;CreateEmployeeForm />
-      &lt;/main>
-    &lt;/div>
+    &lt;header className="Header">
+      &lt;h1 className="Header__heading">HRnet&lt;/h1>
+
+      &lt;LinkWithAnimation
+        url="/BenjaminLesne_14_07122021/employee-list"
+        textContent="view current employees"
+      />
+    &lt;/header>
   );
 };
 
-export default Home;
+export default Header;
 </code></pre>
         </article>
     </section>

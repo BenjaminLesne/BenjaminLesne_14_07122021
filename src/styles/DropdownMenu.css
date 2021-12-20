@@ -59,3 +59,28 @@
   background-color: var(--primary-color);
   color: white;
 }
+
+/*============================================ EmployeesList Dropdown ============================================ */
+.DropdownMenu--employees-list {
+  width: fit-content;
+  margin: 0px 10px;
+  position: relative;
+}
+
+.DropdownMenu--employees-list[open=""] .DropdownMenu__options {
+  height: 150px;
+  width: calc(100% + 20px);
+}
+
+.DropdownMenu--employees-list .DropdownMenu__option {
+  text-align: center;
+}
+
+.DropdownMenu--employees-list .DropdownMenu__options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  z-index: 2;
+  width: calc(100% + 20px);
+}

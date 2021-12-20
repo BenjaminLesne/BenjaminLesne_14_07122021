@@ -1,5 +1,5 @@
 import "../styles/EmployeesTable.css";
-import React from "react";
+import React, { useState } from "react";
 
 import PropTypes from "prop-types";
 import {
@@ -12,6 +12,7 @@ import {
 
 import BottomNavigation from "./BottomNavigation";
 import TopNavigation from "./TopNavigation";
+import SortIcon from "./SortIcon";
 
 /**
  * return all employees in a table made with {@link React-table https://react-table.tanstack.com/docs/overview}
@@ -19,6 +20,7 @@ import TopNavigation from "./TopNavigation";
  */
 
 const EmployeesTable = ({ data, columns }) => {
+  // const [isSortedDesc, setIsSortedDesc] = useState(null);
   const {
     getTableProps,
     getTableBodyProps,
@@ -62,14 +64,20 @@ const EmployeesTable = ({ data, columns }) => {
                   {...column.getHeaderProps(column.getSortByToggleProps())}
                   className="EmployeesTable__header"
                 >
-                  {column.render("Header")}
-                  <span>
-                    {column.isSorted
-                      ? column.isSortedDesc
-                        ? " 🔽"
-                        : " 🔼"
-                      : ""}
+                  <span className="EmployeesTable__header-text-content">
+                    {column.render("Header")}
                   </span>
+
+                  {/* Too many re-redners if I use setIsSortedDesc instead of <SortIcon isSortedDesc={myValue} />. If time allows it, I will fix that later. */}
+                  {column.isSorted ? (
+                    column.isSortedDesc ? (
+                      <SortIcon isSortedDesc={true} />
+                    ) : (
+                      <SortIcon isSortedDesc={false} />
+                    )
+                  ) : (
+                    <SortIcon isSortedDesc={null} />
+                  )}
                 </th>
               ))}
             </tr>

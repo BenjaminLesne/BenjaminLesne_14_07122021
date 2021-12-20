@@ -9,15 +9,22 @@ import { useState } from "react";
  * @param {String}  props.id
  */
 
-const DropdownMenu = ({ options, id }) => {
-  const [inputValue, setInputValue] = useState("");
+const DropdownMenu = ({ options, id, initialInputValue, onChange }) => {
+  const [inputValue, setInputValue] = useState(
+    initialInputValue ? initialInputValue : ""
+  );
 
   /**
    * @function handleClick - handle dropdown menus click on option and on the opening button. I tried my best to follow the functional programming paradigm.
    * @param {string} optionValue - option that got click by user
    * @param {string} setInputValue - give value to the state hidden input
    */
-  const handleClick = (clickEvent, optionValue, updateInputWith) => {
+  const handleClick = (
+    clickEvent,
+    optionValue,
+    updateInputWith,
+    setPageSize
+  ) => {
     clickEvent.stopPropagation();
 
     const DropdownMenu = document.querySelector(`.DropdownMenu--${id}`);
@@ -29,8 +36,10 @@ const DropdownMenu = ({ options, id }) => {
     }
 
     if (optionValue) {
-      // stateInput.value = optionValue;
       updateInputWith(optionValue);
+    }
+    if (setPageSize) {
+      setPageSize(optionValue);
     }
   };
   return (
@@ -51,7 +60,9 @@ const DropdownMenu = ({ options, id }) => {
               <li
                 className="DropdownMenu__option"
                 key={optionValue}
-                onClick={(e) => handleClick(e, optionValue, setInputValue)}
+                onClick={(e) =>
+                  handleClick(e, optionValue, setInputValue, onChange)
+                }
               >
                 {optionValue}
               </li>

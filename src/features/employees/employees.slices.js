@@ -13,6 +13,7 @@ import { createSlice } from "@reduxjs/toolkit";
  * @property  {string} department
  */
 
+//used to change initial state -> testing purpose
 const fakeEmployees = {
   firstName: "ben",
   lastName: "string",
@@ -32,14 +33,7 @@ const fakeEmployees = {
 
 const employeesSlice = createSlice({
   name: "employees",
-  initialState: [
-    fakeEmployees,
-    fakeEmployees,
-    fakeEmployees,
-    fakeEmployees,
-    fakeEmployees,
-    fakeEmployees,
-  ],
+  initialState: [],
   reducers: {
     /**
      * This is an action that add an employee to global redux state

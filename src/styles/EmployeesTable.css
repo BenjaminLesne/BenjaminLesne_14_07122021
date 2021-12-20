@@ -3,12 +3,13 @@
 .EmployeesTable-wrapper {
   width: 100%;
   max-width: 1200px;
-  margin: 20px;
+  margin: 20px auto;
 }
 
 .EmployeesTable {
   width: 100%;
   border-spacing: 0;
+  margin: 10px 0px;
 }
 
 .EmployeesTable__heading-row {
@@ -18,8 +19,10 @@
 
 .EmployeesTable__header {
   min-width: fit-content;
-  padding: 20px 0px;
+  padding: 20px 25px 20px 0px;
   /* flex: 1; */
+  position: relative;
+  user-select: none;
 }
 
 .EmployeesTable__content-row:nth-of-type(2n + 1) {

@@ -9,3 +9,8 @@
   font-size: "1.1rem";
   border: "0";
 }
+
+.TopNavigation__select-number-of-entries-wrapper {
+  display: flex;
+  align-items: center;
+}

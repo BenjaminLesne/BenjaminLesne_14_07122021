@@ -30,19 +30,21 @@ const BottomNavigation = (props) => {
       <div className="BottomNavigation__buttons-wrapper">
         <button
           name="previous-page-button"
+          data-testid="Previous"
           className="BottomNavigation__buttons"
           onClick={() => previousPage()}
           disabled={!canPreviousPage}
         >
-          Previous
+          &#8249;
         </button>
         <button
+          data-testid="Next"
           name="next-page-button"
           className="BottomNavigation__buttons"
           onClick={() => nextPage()}
           disabled={!canNextPage}
         >
-          Next{" "}
+          &#8250;
         </button>
       </div>
     </div>

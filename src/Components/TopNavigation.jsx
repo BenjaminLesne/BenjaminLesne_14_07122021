@@ -1,6 +1,8 @@
 import "../styles/TopNavigation.css";
 
 import { useState } from "react";
+import DropdownMenu from "./DropdownMenu";
+import SearchBar from "./SearchBar";
 
 const TopNavigation = (props) => {
   const {
@@ -21,33 +23,21 @@ const TopNavigation = (props) => {
   return (
     <div className="TopNavigation">
       <div className="TopNavigation__select-number-of-entries-wrapper">
-        <span>Show</span>
-        <select
-          value={pageSize}
-          onChange={(e) => {
-            setPageSize(Number(e.target.value));
-          }}
-        >
-          {[10, 25, 50, 100].map((pageSize) => (
-            <option key={pageSize} value={pageSize}>
-              {pageSize}
-            </option>
-          ))}
-        </select>
-        <span>entries</span>
-      </div>
-      <div className="TopNavigation__search-bar-wrapper">
-        <label>Search:</label>
-        <input
-          className="TopNavigation__search-bar"
-          value={value || ""}
-          onChange={(e) => {
-            setValue(e.target.value);
-            onChange(e.target.value);
-          }}
-          placeholder={`${count} records...`}
+        <span>Entries per page:</span>
+        <DropdownMenu
+          options={[10, 25, 50, 100]}
+          initialInputValue={10}
+          onChange={(optionValue) => setPageSize(Number(optionValue))}
+          id="employees-list"
         />
       </div>
+
+      <SearchBar
+        setValue={setValue}
+        onChange={onChange}
+        value={value}
+        count={count}
+      />
     </div>
   );
 };

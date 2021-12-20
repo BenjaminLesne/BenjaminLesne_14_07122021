@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: Pages/Home/index.jsx</title>
+    <title>JSDoc: Source: Components/HeaderEmployeesList.jsx</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: Pages/Home/index.jsx</h1>
+    <h1 class="page-title">Source: Components/HeaderEmployeesList.jsx</h1>
 
     
 
@@ -26,28 +26,31 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import "../../styles/Home.css";
+            <pre class="prettyprint source linenums"><code>import "../styles/HeaderEmployeesList.css";
 
-import Header from "../../Components/HeaderHome";
-import CreateEmployeeForm from "../../Components/CreateEmployeeForm";
+import LinkWithAnimation from "./LinkWithAnimation";
 
 /**
- * Home page calling components like Header and CreateEmployeeForm
- * @module Home
+ * A simple header with a title inside
+ * @module HeaderEMployeesList
+ *
  */
 
-const Home = () => {
+const HeaderEmployeesList = () => {
   return (
-    &lt;div className="Home">
-      &lt;Header />
-      &lt;main className="container Home__main">
-        &lt;CreateEmployeeForm />
-      &lt;/main>
-    &lt;/div>
+    &lt;header className="HeaderEmployeesList">
+      &lt;LinkWithAnimation
+        className="HeaderEmployeesList__link-to-home"
+        url="/BenjaminLesne_14_07122021/"
+        direction="left"
+        textContent="Go Back to Home"
+      />
+      &lt;h1 className="HeaderEmployeesList__heading">Current Employees&lt;/h1>
+    &lt;/header>
   );
 };
 
-export default Home;
+export default HeaderEmployeesList;
 </code></pre>
         </article>
     </section>

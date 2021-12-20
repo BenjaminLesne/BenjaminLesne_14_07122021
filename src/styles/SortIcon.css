@@ -1,0 +1,11 @@
+.SortIcon {
+  width: 15px;
+  transform: translate(50%, -50%);
+  position: absolute;
+  top: 50%;
+  fill: rgba(255, 255, 255, 0.2);
+}
+
+.SortIcon__active-icon {
+  fill: white;
+}
