@@ -53,7 +53,10 @@ const EmployeesTable = ({ data, columns }) => {
       >
         <thead>
           {headerGroups.map((headerGroup) => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
+            <tr
+              className="EmployeesTable__heading-row"
+              {...headerGroup.getHeaderGroupProps()}
+            >
               {headerGroup.headers.map((column) => (
                 <th
                   {...column.getHeaderProps(column.getSortByToggleProps())}
@@ -77,7 +80,10 @@ const EmployeesTable = ({ data, columns }) => {
           {page.map((row, i) => {
             prepareRow(row);
             return (
-              <tr {...row.getRowProps()}>
+              <tr
+                className="EmployeesTable__content-row"
+                {...row.getRowProps()}
+              >
                 {row.cells.map((cell) => {
                   return (
                     <td

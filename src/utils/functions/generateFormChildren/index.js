@@ -1,7 +1,10 @@
 import React from "react";
+import removeHyphens from "../removeHyphens";
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+
+import DropdownMenu from "../../../Components/DropdownMenu";
 
 /**
  * return children input JSX from an array of objects describing each child
@@ -15,7 +18,7 @@ const generateFormChildren = (formChildrenArray) => {
         return (
           <React.Fragment key={child.id + "-fragment"}>
             <label htmlFor={child.id} className="createEmployee__label">
-              {child.id}
+              {removeHyphens(child.id)}
             </label>
             <input
               className="createEmployee__input"
@@ -28,9 +31,10 @@ const generateFormChildren = (formChildrenArray) => {
         return (
           <React.Fragment key={child.id + "-fragment"}>
             <label htmlFor={child.id} className="createEmployee__label">
-              {child.id}
+              {removeHyphens(child.id)}
             </label>
             <DatePicker
+              className="createEmployee__input"
               id={child.id}
               selected={child.selected}
               onChange={child.onChange}
@@ -47,13 +51,12 @@ const generateFormChildren = (formChildrenArray) => {
         );
       case "select":
         return (
-          <select id={child.id} key={child.id}>
-            {child.options.map((option) => {
-              const optionValue =
-                typeof option === "object" ? option.name : option;
-              return <option key={optionValue}>{optionValue}</option>;
-            })}
-          </select>
+          <React.Fragment key={child.id + "-fragment"}>
+            <label htmlFor={child.id} className="createEmployee__label">
+              {removeHyphens(child.id)}
+            </label>
+            <DropdownMenu options={child.options} id={child.id} />
+          </React.Fragment>
         );
 
       default:

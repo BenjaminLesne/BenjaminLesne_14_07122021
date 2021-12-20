@@ -1,0 +1,13 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  height: 100px;
+  margin-bottom: 50px;
+  background-color: white;
+}
+
+.Header__heading {
+  margin: 0;
+}

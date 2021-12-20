@@ -1,0 +1,103 @@
+@import url("../utils/css/variables.css");
+
+.link {
+  height: 30px;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+}
+
+.link[data-direction="left"] .link__mask {
+  order: 2;
+}
+
+.link[data-direction="left"] .link__icon-wrapper {
+  order: 1;
+  transform: rotate(180deg);
+}
+
+/* Hide extra text */
+.link__mask {
+  position: relative;
+  padding: 0;
+  height: 20px;
+
+  /*  Remove overflow to see how it works　:) */
+  overflow: hidden;
+}
+
+.link__container {
+  transition: transform 0.4s ease;
+}
+
+.link__title {
+  display: block;
+
+  /*  Set same font-size and line height  */
+  font-size: 20px;
+  line-height: 20px;
+
+  transition: transform 0.4s ease;
+  text-transform: capitalize;
+}
+
+.link__title1 {
+  transform-origin: right center;
+}
+
+.link__title2 {
+  transform-origin: left center;
+  transform: rotate(20deg);
+}
+
+.link__icon-wrapper {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+
+  /*  Remove overflow to see how it works　:) */
+  overflow: hidden;
+}
+
+.link__icon {
+  display: block;
+  position: absolute;
+  transition: transform 0.4s ease;
+  fill: white;
+}
+
+.link__icon:nth-child(2) {
+  transform: translate(-40px);
+}
+
+/* Hover Action*/
+
+/* Move up two texts (20px = font-size) */
+.link:hover .link__container {
+  transform: translateY(-20px);
+}
+
+/* Rotate texts a little bit */
+.link:hover .link__title1 {
+  transform: rotate(20deg);
+}
+
+.link:hover .link__title2 {
+  transform: rotate(0);
+}
+
+/* Move arrows to right */
+.link:hover .link__icon:first-child {
+  transform: translate(40px);
+}
+
+.link:hover .link__icon:nth-child(2) {
+  transform: translate(0px);
+}

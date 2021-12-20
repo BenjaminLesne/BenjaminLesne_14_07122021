@@ -1,18 +1,33 @@
-.employeesTable {
-  border: "solid 1px blue";
+@import url("../utils/css/variables.css");
+
+.EmployeesTable-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px;
 }
 
-.employeesTable__header {
-  border-bottom: "solid 3px red";
-  background: "aliceblue";
-  color: "black";
-  font-weight: "bold";
+.EmployeesTable {
+  width: 100%;
+  border-spacing: 0;
 }
 
-.employeesTable__cell {
-  padding: "10px";
+.EmployeesTable__heading-row {
+  background-color: var(--primary-color);
+  color: white;
+}
 
-  border: "solid 1px gray";
+.EmployeesTable__header {
+  min-width: fit-content;
+  padding: 20px 0px;
+  /* flex: 1; */
+}
 
-  background: "papayawhip";
+.EmployeesTable__content-row:nth-of-type(2n + 1) {
+  background: #eeeeee;
+}
+
+.EmployeesTable__cell {
+  padding: 20px 0px;
+  text-align: center;
+  text-transform: capitalize;
 }

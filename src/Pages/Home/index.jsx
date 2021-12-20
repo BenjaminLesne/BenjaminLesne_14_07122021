@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+import "../../styles/Home.css";
 
-import Header from "../../Components/Header";
+import Header from "../../Components/HeaderHome";
 import CreateEmployeeForm from "../../Components/CreateEmployeeForm";
 
 /**
@@ -10,11 +10,9 @@ import CreateEmployeeForm from "../../Components/CreateEmployeeForm";
 
 const Home = () => {
   return (
-    <div>
+    <div className="Home">
       <Header />
-      <main className="container">
-        <Link to="/employee-list">View Current Employees</Link>
-        <h2>Create Employee</h2>
+      <main className="container Home__main">
         <CreateEmployeeForm />
       </main>
     </div>

@@ -1,9 +1,73 @@
-label {
+@import url("../utils/css/variables");
+
+.createEmployee {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  background-color: white;
+  padding: 45px 90px;
+}
+
+.createEmployee__heading {
+  text-align: center;
+  margin-top: 0;
+  display: block;
+}
+
+.createEmployee__heading::first-letter {
+  text-transform: uppercase;
+}
+
+.createEmployee__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.createEmployee__label {
   display: block;
   margin-top: 1rem;
   margin-bottom: 10px;
+  text-transform: capitalize;
 }
 
 .address {
   margin-top: 10px;
+}
+
+.createEmployee__input {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.createEmployee__input-error-message {
+  color: red;
+  font-weight: bold;
+  font-size: 80%;
+}
+
+.createEmployee__input:focus-visible {
+  outline: 2px solid var(--primary-color);
+}
+
+.createEmployee__fieldset {
+  padding: 0;
+  width: 100%;
+  border: none;
+}
+
+.createEmployee__submit-button {
+  margin: 50px auto;
+  width: fit-content;
+  padding: 16px 30px;
+  border-radius: 8px;
+  color: white;
+  /* background-color: #7a5cfa; */
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: capitalize;
 }

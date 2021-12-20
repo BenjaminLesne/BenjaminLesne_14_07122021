@@ -1,0 +1,21 @@
+.HeaderEmployeesList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  height: 100px;
+  margin-bottom: 50px;
+  background-color: white;
+  position: relative;
+}
+
+.HeaderEmployeesList__heading {
+  margin: auto;
+}
+
+.HeaderEmployeesList__link-to-home {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+}

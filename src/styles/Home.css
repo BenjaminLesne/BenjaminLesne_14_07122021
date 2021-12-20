@@ -1,0 +1,9 @@
+@import url("../utils/css/variables");
+
+.Home {
+  background-color: rgba(var(--primary-color-rgb), 0.2);
+}
+
+.Home__main {
+  padding: 0 10px 100px 10px;
+}

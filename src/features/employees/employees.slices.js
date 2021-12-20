@@ -6,37 +6,39 @@ import { createSlice } from "@reduxjs/toolkit";
  * @property  {string} lastName
  * @property  {string} dateOfBirth
  * @property  {string} startDate
- * @property  {object} address
- * @property  {string} address.street
- * @property  {string} address.city
- * @property  {string} address.state
- * @property  {string} address.zip
+ * @property  {string} street
+ * @property  {string} city
+ * @property  {string} state
+ * @property  {string} zipCode
  * @property  {string} department
  */
+
+const fakeEmployees = {
+  firstName: "ben",
+  lastName: "string",
+  dateOfBirth: "string",
+  startDate: "10/06/2003",
+  street: "rue antoine",
+  city: "string",
+  state: "Alabama",
+  zipCode: "10",
+  department: "Sales",
+};
 
 /**
  * create a slice for employees (see {@link https://redux-toolkit.js.org/api/createslice @reduxjs/toolkit})
  * @module employeesSlice
  */
 
-const toRemoveWhenProjectDone = {
-  firstName: "Benjamin",
-  lastName: "Lesne",
-  dateOfBirth: "07-08-1990",
-  startDate: "08-08-1990",
-  street: "antoine de jussieu",
-  city: "Saint nazaire",
-  state: "France",
-  zipCode: 2,
-  department: "Sale",
-};
-
 const employeesSlice = createSlice({
   name: "employees",
   initialState: [
-    toRemoveWhenProjectDone,
-    toRemoveWhenProjectDone,
-    toRemoveWhenProjectDone,
+    fakeEmployees,
+    fakeEmployees,
+    fakeEmployees,
+    fakeEmployees,
+    fakeEmployees,
+    fakeEmployees,
   ],
   reducers: {
     /**

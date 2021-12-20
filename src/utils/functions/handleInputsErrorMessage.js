@@ -8,13 +8,9 @@
 
 function handleInputsErrorMessage(condition, input, errorMessage) {
   let errorMessageElement = document.getElementById(
-    `${input.id + "__error-message"}`
+    `createEmployee__input-error-message--${input.id}`
   );
-  // console.log("condition");
-  // console.log(condition);
-  // console.log("input.value");
-  // console.log(input.value);
-  // console.log(typeof input.value);
+
   if (condition) {
     input.setCustomValidity("");
     errorMessageElement?.remove();
@@ -23,7 +19,7 @@ function handleInputsErrorMessage(condition, input, errorMessage) {
 
   if (!errorMessageElement) {
     errorMessageElement = new DOMParser().parseFromString(
-      `<p id=${input.id + "__error-message"} className="input__error-message">
+      `<p id="createEmployee__input-error-message--${input.id}" class="createEmployee__input-error-message">
           ${errorMessage}
         </p>`,
       "text/html"

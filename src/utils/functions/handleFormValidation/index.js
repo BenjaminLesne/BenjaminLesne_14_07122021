@@ -1,5 +1,5 @@
-import handleInputsErrorMessage from "./handleInputsErrorMessage";
-import { STATES, DEPARTMENTS } from "../data";
+import handleInputsErrorMessage from "../handleInputsErrorMessage";
+import { STATES, DEPARTMENTS } from "../../data";
 
 /**
  * Get an array of inputs and call handleInputsErrorMessage on each of them with as first arg, the condition to resolve, second the input element and the error message to display if the condition return false.
@@ -52,7 +52,7 @@ const handleFormValidation = async (formInputsArray) => {
         );
 
       default:
-        alert("error: unknown input id");
+        console.log("error: unknown input id");
         console.log(input.id);
         return false;
     }

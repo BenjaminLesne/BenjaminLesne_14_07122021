@@ -52,11 +52,14 @@ const CreateEmployeeForm = () => {
   ];
 
   return (
-    <>
-      <form action="#" id="create-employee" className="createEmployeeForm">
+    <section className="createEmployee">
+      <h2 className="createEmployee__heading">create an employee form</h2>
+      <form action="#" id="create-employee" className="createEmployee__form">
         {generateFormChildren(formChildren)}
 
         <button
+          className="createEmployee__submit-button"
+          name="submit"
           type="submit"
           onClick={(e) =>
             handleSubmit(e, (newEmployee) =>
@@ -68,7 +71,7 @@ const CreateEmployeeForm = () => {
         </button>
       </form>
       <Modal />
-    </>
+    </section>
   );
 };
 
