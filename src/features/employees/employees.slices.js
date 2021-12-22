@@ -14,17 +14,17 @@ import { createSlice } from "@reduxjs/toolkit";
  */
 
 //used to change initial state -> testing purpose
-const fakeEmployees = {
-  firstName: "ben",
-  lastName: "string",
-  dateOfBirth: "string",
-  startDate: "10/06/2003",
-  street: "rue antoine",
-  city: "string",
-  state: "Alabama",
-  zipCode: "10",
-  department: "Sales",
-};
+// const fakeEmployees = {
+//   firstName: "ben",
+//   lastName: "string",
+//   dateOfBirth: "string",
+//   startDate: "10/06/2003",
+//   street: "rue antoine",
+//   city: "string",
+//   state: "Alabama",
+//   zipCode: "10",
+//   department: "Sales",
+// };
 
 /**
  * create a slice for employees (see {@link https://redux-toolkit.js.org/api/createslice @reduxjs/toolkit})

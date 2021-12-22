@@ -17,6 +17,7 @@ import subYears from "date-fns/subYears";
  */
 
 const CreateEmployeeForm = () => {
+  const [shouldModalOpen, setShouldModalOpen] = useState(false);
   const [dateOfBirth, setDateOfBirth] = useState(null);
   const [startDate, setStartDate] = useState(null);
   const dispatch = useDispatch();
@@ -62,15 +63,22 @@ const CreateEmployeeForm = () => {
           name="submit"
           type="submit"
           onClick={(e) =>
-            handleSubmit(e, (newEmployee) =>
-              dispatch(employeesActions.addEmployee(newEmployee))
+            handleSubmit(
+              e,
+              (newEmployee) =>
+                dispatch(employeesActions.addEmployee(newEmployee)),
+              setShouldModalOpen
             )
           }
         >
           Save
         </button>
       </form>
-      <Modal />
+      <Modal
+        setShouldModalOpen={setShouldModalOpen}
+        open={shouldModalOpen}
+        textContent="You added an employee"
+      />
     </section>
   );
 };

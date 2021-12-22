@@ -65,53 +65,12 @@
   padding: 10px;
   cursor: pointer;
 }
-/* .modalbox.success {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  border-radius: 2px;
-  background: #fff;
-  padding: 25px 25px 15px;
-  text-align: center;
-} */
-/* .modalbox.success.animate .icon {
-  animation: fall-in 0.75s;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-} */
-
-/* .modalbox.success button {
-  transition: all 0.1s ease-in-out;
-  border-radius: 30px;
-  margin-top: 15px;
-  width: 80%;
-  background: transparent;
-  color: #4caf50;
-  border-color: #4caf50;
-  outline: none;
-  padding: 10px;
-  cursor: pointer;
-} */
 
 .Modal__ok-button:hover {
   color: #fff;
   background: #4caf50;
   border-color: transparent;
 }
-/* .modalbox.success button:hover {
-  color: #fff;
-  background: #4caf50;
-  border-color: transparent;
-} */
-/* .modalbox.success .icon {
-  color: white;
-  padding: 15px;
-  position: relative;
-  margin: 0 auto;
-  margin-top: -75px;
-  background: #4caf50;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-} */
 
 @keyframes fall-in {
   0% {

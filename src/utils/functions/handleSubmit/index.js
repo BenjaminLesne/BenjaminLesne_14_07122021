@@ -7,7 +7,7 @@ import returnArrayOfFormInputs from "../returnArrayOfFormInputs";
  * @param {Object} e
  * @param {Object} addEmployee - function that will add to redux state a given object that stores all the datas about an employee.
  */
-const handleSubmit = async (e, addEmployee) => {
+const handleSubmit = async (e, addEmployee, setShouldModalOpen) => {
   e.preventDefault();
 
   const formLastInputIndex =
@@ -53,7 +53,9 @@ const handleSubmit = async (e, addEmployee) => {
         };
 
         addEmployee(newEmployee);
-        document.getElementById("modal").setAttribute("open", "");
+        setShouldModalOpen(true);
+
+        // document.getElementById("modal").setAttribute("open", "");
       }
     });
   } catch (err) {

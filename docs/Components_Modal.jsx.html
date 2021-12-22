@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: Pages/Home/index.jsx</title>
+    <title>JSDoc: Source: Components/Modal.jsx</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: Pages/Home/index.jsx</h1>
+    <h1 class="page-title">Source: Components/Modal.jsx</h1>
 
     
 
@@ -26,28 +26,43 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import "../../styles/Home.css";
+            <pre class="prettyprint source linenums"><code>import "../styles/Modal.css";
+import React from "react";
 
-import Header from "../../Components/HeaderHome";
-import CreateEmployeeForm from "../../Components/CreateEmployeeForm";
+import { ReactComponent as CheckLogo } from "../assets/check-solid.svg";
 
 /**
- * Home page calling components like Header and CreateEmployeeForm
- * @module Home
+ * A beautiful Success Modal Component
+ * @module Modal
+ * @param {string} props.textContent - text to display on the modal
+ * @param {boolean} props.open - should the modal open ?
+ * @param {object} props.setShouldModalOpen - function allowing to close the modal by clicking on "ok" button
  */
 
-const Home = () => {
+const Modal = ({ textContent, open, setShouldModalOpen }) => {
   return (
-    &lt;div className="Home">
-      &lt;Header />
-      &lt;main className="container Home__main">
-        &lt;CreateEmployeeForm />
-      &lt;/main>
-    &lt;/div>
+    &lt;dialog className="Modal" id="modal" data-testid="modal" open={open}>
+      &lt;div className="Modal__content-wrapper modalbox success animate">
+        &lt;div className="Modal__icon icon">
+          &lt;CheckLogo />
+        &lt;/div>
+        &lt;div className="Modal__text-content">
+          &lt;h1>Success!&lt;/h1>
+          &lt;p>{textContent}&lt;/p>
+        &lt;/div>
+        &lt;button
+          onClick={() => setShouldModalOpen(false)}
+          type="button"
+          className="Modal__ok-button redo btn"
+        >
+          Ok
+        &lt;/button>
+      &lt;/div>
+    &lt;/dialog>
   );
 };
 
-export default Home;
+export default Modal;
 </code></pre>
         </article>
     </section>

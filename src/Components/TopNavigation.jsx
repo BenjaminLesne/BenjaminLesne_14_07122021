@@ -6,7 +6,6 @@ import SearchBar from "./SearchBar";
 
 const TopNavigation = (props) => {
   const {
-    pageSize,
     setPageSize,
     preGlobalFilteredRows,
     globalFilter,

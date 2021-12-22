@@ -1,5 +1,5 @@
 import "../styles/EmployeesTable.css";
-import React, { useState } from "react";
+import React from "react";
 
 import PropTypes from "prop-types";
 import {
@@ -130,7 +130,7 @@ EmployeesTable.propTypes = {
       street: PropTypes.string.isRequired,
       city: PropTypes.string.isRequired,
       state: PropTypes.string.isRequired,
-      zipCode: PropTypes.number.isRequired,
+      zipCode: PropTypes.string.isRequired,
       department: PropTypes.string.isRequired,
     })
   ),
