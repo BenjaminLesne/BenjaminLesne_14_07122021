@@ -21,7 +21,8 @@ Application originale :
 - [Site Web 🌍](https://benjaminlesne.github.io/P12_Front-end/)
 - [Code source 📖](https://github.com/BenjaminLesne/P12_Front-end)
 
-!screenshot du site](./src/assets/screenshot.png)
+![screenshot page d'accueil](./src/assets/homepage-screenshot.png)
+![screenshot page registre des employées](./src/assets/employees-register-screenshot.png)
 
 ## Side note :
 
