@@ -14,7 +14,7 @@ Je suis chargé de convertir cette application en React ainsi qu'une bibliothèq
 
 **Liens utiles:**
 Nouvelle application :
-- [Site Web 🌍] (https://benjaminlesne.github.io/BenjaminLesne_14_07122021)
+- [Site Web 🌍](https://benjaminlesne.github.io/BenjaminLesne_14_07122021)
 - [Code source 📖](https://github.com/BenjaminLesne/BenjaminLesne_14_07122021)
 
 Application originale :
