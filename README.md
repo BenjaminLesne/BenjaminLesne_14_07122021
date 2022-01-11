@@ -13,6 +13,7 @@ Je suis chargé de convertir cette application en React ainsi qu'une bibliothèq
 - Programmer en JavaScript avec la programmation fonctionnelle
 
 **Liens utiles:**
+
 Nouvelle application :
 - [Site Web 🌍](https://benjaminlesne.github.io/BenjaminLesne_14_07122021)
 - [Code source 📖](https://github.com/BenjaminLesne/BenjaminLesne_14_07122021)
@@ -42,6 +43,7 @@ I'm in charge of converting this application to React, with the addition of a jQ
 - Programming in JavaScript with functional programming
 
 **Useful links:**
+
 New App:
 - [Website 🌍](https://benjaminlesne.github.io/BenjaminLesne_14_07122021)
 - [Source Code 📖](https://github.com/BenjaminLesne/BenjaminLesne_14_07122021)
