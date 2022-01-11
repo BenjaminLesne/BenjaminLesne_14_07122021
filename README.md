@@ -50,18 +50,18 @@ Original App:
 - [Website 🌍](https://benjaminlesne.github.io/P12_Front-end/)
 - [Source Code 📖](https://github.com/BenjaminLesne/P12_Front-end)
 
+## Side note:
+
+I did units tests (cf folder of each page) and a documentation with JsDoc that you can find in projectFolder/docs/index.html. Right click on this html file then "open with [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)" and you should see the documentation in your browser.
+
+It is possible to submit the same form over and over again, this is intentional. It allows you to add employees more quickly so you can see the visual result on the "current employees" page.
+
 ## Installation
 
 - Install [yarn](https://yarnpkg.com/getting-started/install) on your system
 - Clone this repository and run yarn install in your command line.
 - Start the app with yarn start
 - The app should now run in http://localhost:3000/
-
-## Side note:
-
-I did units tests (cf folder of each page) and a documentation with JsDoc that you can find in projectFolder/docs/index.html. Right click on this html file then "open with [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)" and you should see the documentation in your browser.
-
-It is possible to submit the same form over and over again, this is intentional. It allows you to add employees more quickly so you can see the visual result on the "current employees" page.
 
 ## License
 
