@@ -23,7 +23,7 @@ Application originale :
 ![screenshot page d'accueil](./src/assets/homepage-screenshot.png)
 ![screenshot page registre des employées](./src/assets/employees-register-screenshot.png)
 
-## Side note :
+## Remarques :
 
 J'ai fait des tests unitaires (cf dossier de chaque page) et une documentation avec JsDoc que vous pouvez trouver dans projectFolder/docs/index.html. Faites un clic droit sur ce fichier html puis "open with [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)" et vous devriez voir la documentation dans votre navigateur.
 
