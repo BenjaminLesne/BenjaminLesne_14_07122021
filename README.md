@@ -27,6 +27,8 @@ Application originale :
 
 J'ai fait des tests unitaires (cf dossier de chaque page) et une documentation avec JsDoc que vous pouvez trouver dans projectFolder/docs/index.html. Faites un clic droit sur ce fichier html puis "open with [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)" et vous devriez voir la documentation dans votre navigateur.
 
+Il est possible de soumettre le même formulaire à volonté, c'est intentionnel. Ca permet d'ajouter des employées plus rapidement afin de voir le résultat visuel sur la page "current employees".
+
 # ENGLISH VERSION
 
 WealthHealth, my employer, uses an internal web application called HRnet that manages employee records. The application is old and uses jQuery on the front end, which leads to considerable bugs and increased internal complaints.
@@ -58,6 +60,8 @@ Original App:
 ## Side note:
 
 I did units tests (cf folder of each page) and a documentation with JsDoc that you can find in projectFolder/docs/index.html. Right click on this html file then "open with [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)" and you should see the documentation in your browser.
+
+It is possible to submit the same form over and over again, this is intentional. It allows you to add employees more quickly so you can see the visual result on the "current employees" page.
 
 ## License
 
