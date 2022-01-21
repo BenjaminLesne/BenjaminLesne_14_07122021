@@ -3,7 +3,7 @@ import { DEPARTMENTS, STATES } from "../utils/data";
 import generateFormChildren from "../utils/functions/generateFormChildren";
 import handleSubmit from "../utils/functions/handleSubmit";
 
-import Modal from "./Modal";
+import { Modal } from "success-modal";
 
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
